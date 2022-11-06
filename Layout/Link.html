@@ -1,0 +1,24 @@
+<div ng-include="'./Layout/header.html'"></div>
+<div class="main">
+    <div class="div-channel-youtube container-fluid">
+        <div class="link-youtube row">
+            <h6>Xem trên Youtube với các trận đấu không bản quyền</h6>
+            <div class="d-flex row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                <div class="col" ng-repeat="x in Listlink">
+                    <a href="{{x.link}}" target="_blank"><i class='bx bxl-youtube'></i>Link {{x.id}}</a>
+                </div>
+            </div>
+        </div>
+        <div class="div-link-contraband">
+            <h6>Link các Website xem full các trận đấu nghiệp dư đến chuyên nghiệp</h6>
+            <div class="link-contraband row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                <div class="col" ng-repeat="z in Listlinkweb">
+                    <a href="{{z.link}}" target="_blank" rel="noopener noreferrer">
+                        <img src="{{z.img}}" alt="">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

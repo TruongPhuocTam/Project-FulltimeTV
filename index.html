@@ -32,8 +32,6 @@
     <link rel="stylesheet" href="./Public/Css/header.css">
     <link rel="stylesheet" href="./Public/Css/style.css">
     <link rel="stylesheet" href="./Public/Css/footer.css">
-    <link rel="stylesheet" href="./Public/Css/section.css">
-    <link rel="stylesheet" href="./Public/Css/eventlive.css">
 
     <!-- AngularJS -->
     <script src="./Public/AngularJS/main.js"></script>
@@ -41,13 +39,13 @@
 </head>
 
 <body ng-app="myapp" ng-controller="myctrl">
-
+    <!-- Header -->
     <div ng-include="'./Layout/header.html'"></div>
-    <div>
-        <div ng-include="'./Layout/section.html'"></div>
-        <div ng-include="'./Layout/EventLive.html'"></div>
-    </div>
 
+    <!-- Main -->
+    <div ng-view></div>
+
+    <!-- Footer -->
     <footer ng-include="'./Layout/footer.html'"></footer>
 </body>
 

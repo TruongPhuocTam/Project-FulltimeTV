@@ -1,16 +1,20 @@
+<div class="section">
+    <img src="./Public/Images/background_barner.png" alt="">
+</div>
 <div class="container-fluid mt-5">
     <div class="row row-cols-1 row-cols-lg-4 g-2 g-lg-3">
         <div class="col" ng-repeat="match in Listmatch">
-            <a href="./Live.html" class="div-eventlive">
+            <a href='#!Live/{{match.id}}'>
                 <div class="event">
                     <div class="div-header-live">
                         <img src="./Public/Images/Livepng.png" alt="">
                         <h6>{{match.name | uppercase}}</h6>
                     </div>
                     <div class="match-name">
-                        <h5>{{match.TeamOne | uppercase}}<br>vs <br>{{match.TeamTwo | uppercase}}</h5>
+                        <h5>{{match.TeamOne | uppercase}}<br>vs<br>{{match.TeamTwo | uppercase}}</h5>
                     </div>
                 </div>
+                <!-- <span class="span-link-live" hidden ng-model="linkvideo">{{match.Link}}</span> -->
             </a>
         </div>
     </div>
