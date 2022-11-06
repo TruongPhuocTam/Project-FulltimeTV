@@ -44,15 +44,18 @@
 <body ng-app="myapp" ng-controller="myctrl">
 
     <div ng-include="'./Layout/header.html'"></div>
-    <div class="div-livestreamchat container-fluid">
+    <div class="mt-2 container-fluid">
         <div>
-            <iframe id="b3dba4de-05cc-abf6-59d6-38761d56f0ba"
+            <!-- <iframe id="b3dba4de-05cc-abf6-59d6-38761d56f0ba"
                 src="https://iframe.dacast.com/live/9bf315f5-8586-2906-3bba-22fa684fc8a2/b3dba4de-05cc-abf6-59d6-38761d56f0ba"
                 width="870" height="490" frameborder="0" scrolling="no" allow="autoplay;encrypted-media" allowfullscreen
                 webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen>
-            </iframe>
+            </iframe> -->
+            <iframe src="https://player.castr.com/live_2f8950605d6d11eda44bfb23783b0b56" width="100%"
+                style="aspect-ratio: 16/9; min-height: 490px;" frameborder="0" scrolling="no" allow="autoplay"
+                allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
         </div>
-        <div class="div-chat">
+        <!-- <div class="div-chat">
             <h4>Chat</h4>
             <div class="text-comment" id="chatbox">
                 <p>Hello !!</p>
@@ -65,7 +68,7 @@
                 <button class="button-send-chat" name="submit-comment" type="submit" id="submit-comment"
                     value="Send">SEND</button>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <footer ng-include="'./Layout/footer.html'"></footer>
