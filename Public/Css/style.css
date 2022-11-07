@@ -12,6 +12,10 @@ footer {
     height: auto;
     margin-top: 85px;
 }
+/* main */
+.div-main {
+    margin: auto;
+}
 /* Channel youtube */
 .img-channel {
     width: 25%;
@@ -87,6 +91,8 @@ footer {
     width: 300px;
     height: 200px;
     padding: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .div-header-live {
@@ -102,14 +108,30 @@ footer {
     color: rgb(255, 255, 255);
     margin-left: 10px;
 }
-
-.match-name {
+.match-name-tournament:hover {
+    color:rgb(0, 147, 210)
+}
+.match-nameteam {
     text-align: center;
     color:rgb(255, 255, 255);
 }
-.match-name>h5:hover {
-    font-size: 22px;
-    color: red;
+.match-nameteam>h5:hover {
+    color: rgb(0, 179, 113);
+}
+
+.div-button-watch {
+    background-color: rgb(191, 0, 0);
+    transform: translateX(-200%);
+    transition: all 0.2s linear;
+    border-radius: 15px;
+    width: 100px;
+    margin: auto;
+}
+.div-button-watch:hover {
+    background-color: rgb(226, 102, 0);
+}
+.event:hover .div-button-watch {
+    transform: translateX(0%);
 }
 /*  */
 

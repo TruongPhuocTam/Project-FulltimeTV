@@ -35,12 +35,13 @@ app.controller('myctrl', ($scope, $http, $sce) => {
 
 app.config(function ($routeProvider) {
   $routeProvider
-    .when('/Link', {
-      templateUrl: './Layout/Link.html'
+    .when('/Link/:namepage', {
+      templateUrl: './Layout/Link.html',
+      controller: 'LinkCtrl'
     })
-    .when('/Other', {
-      templateUrl: './Layout/Other.html'
-      // controller: 'LinkCtrl'
+    .when('/Other/:namepage', {
+      templateUrl: './Layout/Other.html',
+      controller: 'OtherCtrl'
     })
     .when('/Live/:id', {
       templateUrl: './Layout/Live.html',
@@ -51,8 +52,15 @@ app.config(function ($routeProvider) {
     })
 })
 app.controller('LiveCtrl', function ($scope, $routeParams) {
-  $scope.linkvideo = $scope.Listmatch[$routeParams.id].Link
+  $scope.linkvideo = $scope.Listmatch[$routeParams.id].Link;
 })
+app.controller('LinkCtrl', function ($scope, $routeParams) {
+  $scope.namepage = $routeParams.namepage;
+})
+app.controller('OtherCtrl', function ($scope, $routeParams) {
+  $scope.namepage = $routeParams.namepage;
+})
+
 app.filter('trusted', [
   '$sce',
   function ($sce) {

@@ -16,58 +16,46 @@
     <!-- Icon -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <!-- Css -->
+    <link rel="stylesheet" href="../Public/Css/admin.css">
+    
 </head>
-<style>
-    body {
-        font-family: Arial 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    .form-match {
-        padding: 20px;
-        background-color: rgb(174, 199, 244);
-        width: 235px;
-        border-radius: 15px;
-    }
-    .form-match>div>input {
-        border-radius: 25px;
-        text-align: center;
-        border: 0px;
-    }
-    .button-add-match {
-        background-color: rgb(87, 111, 244);
-        border-radius: 15px;
-        width: 100px;
-        height: 30px;
-        border: 0px;
-    }
-    .button-add-match:hover {
-        background-color: rgb(30, 60, 226);
-        color: white;
-    }
-</style>
 
 <body class="container-fluid">
-    <form action="" class="form-match">
+    <form action="" class="form-match" id="manage-form">
         <h5>Thông tin trận đấu</h5>
-        <div>
-            <label for="">Tên giải đấu:</label> <br>
-            <input type="text" placeholder="Nhập tên trận đấu...">
+
+        <div class="form-group">
+            <label class="form-label" for="name-tournament">Tên giải đấu:</label> <br>
+            <input id="name-tournament" type="text" class="form-input" placeholder="Nhập tên trận đấu..." /><br>
+            <span class="form-message"></span>
         </div>
-        <div>
-            <label for="">Tên Team 1:</label> <br>
-            <input type="text" placeholder="Nhập tên team 1...">
+
+        <div class="form-group">
+            <label class="form-label" for="name-team-one">Tên Team 1:</label> <br>
+            <input id="name-team-one" type="text" class="form-input" placeholder="Nhập tên team 1..." /><br>
+            <span class="form-message"></span>
         </div>
-        <div>
-            <label for="">Tên Team 2:</label> <br>
-            <input type="text" placeholder="Nhập tên team 2...">
+
+        <div class="form-group">
+            <label class="form-label" for="name-team-two">Tên Team 2:</label> <br>
+            <input id="name-team-two" type="text" class="form-input" placeholder="Nhập tên team 2..." /><br>
+            <span class="form-message"></span>
         </div>
-        <div>
-            <label for="">Link phát trận đấu:</label> <br>
-            <input type="text" placeholder="Nhập link...">
+
+        <div class="form-group">
+            <label class="form-label" for="url-link">Link phát trận đấu:</label> <br>
+            <input id="url-link" type="text" class="form-input" placeholder="Nhập link..." /><br>
+            <span class="form-message"></span>
         </div>
+
         <div class="text-center mt-3">
-            <button type="submit" class="button-add-match">Thêm</button>
+            <button type="submit" class="button-add-match form-submit">Thêm</button>
         </div>
     </form>
+
+    <!-- JS & NodeJS -->
+    <script src="../NodeJs/main.js"></script>
 </body>
 
 </html>

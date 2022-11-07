@@ -14,7 +14,7 @@ body .footer {
   display: grid;
   position: relative;
   grid-area: footer;
-  /* min-height: 100px; */
+  min-height: 1px;
 }
 
 body .footer .bubbles {
@@ -195,9 +195,10 @@ body .footer .content>div .image {
   transition: all .2s linear
 }
 
+
 .social-icons a:active, .social-icons a:focus, .social-icons a:hover {
   color: #fff;
-  background-color: #29aafe
+  background-color: #29aafe;
 }
 
 .social-icons.size-sm a {
@@ -208,7 +209,7 @@ body .footer .content>div .image {
 }
 
 .social-icons a.facebook:hover {
-  background-color: #3b5998
+  background-color: #3b5998;
 }
 
 .social-icons a.twitter:hover {
