@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login Admin</title>
+
+    <!-- Logo Icon Website -->
+    <link rel="shortcut icon" type="image/svg" href="./Public/assets/icon.png" />
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--Thư viện Angular định tuyến -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.js"></script>
+
+    <!-- Thư viện AngularJS -->
+    <script src="./angular-1.8.2/angular-route.js"></script>
+    <script src="./angular-1.8.2/angular.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./Public/Css/header.css">
+    <link rel="stylesheet" href="./Public/Css/style.css">
+    <link rel="stylesheet" href="./Public/Css/footer.css">
+    <link rel="stylesheet" href="./Public/Css/admin.css">
+
+    <!-- AngularJS -->
+    <script src="./Public/AngularJS/Angularmain.js"></script>
+
+</head>
+
+<body ng-app="myapp" ng-controller="myctrl">
+    <!-- Header -->
+    <div ng-include="'./Layout/header.html'"></div>
+
+    <!-- Main -->
+    <div class="div-login">
+        <form action="/" id="manage-form">
+            <h5>Login Admin</h5>
+            <div class="form-group">
+                <label class="form-label" for="Username">Username</label> <br>
+                <input id="Username" type="text" class="form-input" placeholder="Nhập Username or Gmail..." /><br>
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="Password">Password</label> <br>
+                <input id="Password" type="password" class="form-input" placeholder="Nhập password..." /><br>
+                <span class="form-message"></span>
+            </div>
+            <div class="text-center mt-3">
+                <button type="submit" class="button-login form-submit">Login</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer ng-include="'./Layout/footer.html'"></footer>
+
+</body>
+<!-- Js -->
+<script src="./Public/Js/Jsmain.js"></script>
+
+</html>

@@ -2,21 +2,144 @@ body {
     font-family: Arial 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/*  */
+.dashboard {
+    background-color: rgb(34, 34, 34);
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    color: white;
+}
+
+main {
+    margin-top: 105px;
+}
+
+.main-layout {
+    background-color: rgb(181, 187, 216);
+    margin-left: 105px;
+    width: 93%;
+    min-height: 530px;
+    max-height: 530px;
+    padding: 50px;
+    position: fixed;
+    overflow: auto;
+}
+
+.dashboard>h3 {
+    padding-top: 30px;
+    font-weight: 900;
+    animation: color 20s infinite;
+    -webkit-animation: color 20s infinite;
+    -moz-animation: color 20s infinite;
+    -o-animation: color 20s infinite
+}
+
+/*  */
+@keyframes color {
+    0% {
+        color: #fbcf61
+    }
+
+    20% {
+        color: #6bd57e
+    }
+
+    40% {
+        color: #ff6f6f
+    }
+
+    60% {
+        color: #57cff4
+    }
+
+    80% {
+        color: #0ed4c8
+    }
+
+    100% {
+        color: #fbcf61
+    }
+}
+
+@-webkit-keyframes color {
+    0% {
+        color: #fbcf61
+    }
+
+    20% {
+        color: #6bd57e
+    }
+
+    40% {
+        color: #ff6f6f
+    }
+
+    60% {
+        color: #57cff4
+    }
+
+    80% {
+        color: #0ed4c8
+    }
+
+    100% {
+        color: #fbcf61
+    }
+}
+
+@-moz-keyframes color {
+    0% {
+        color: #fbcf61
+    }
+
+    20% {
+        color: #6bd57e
+    }
+
+    40% {
+        color: #ff6f6f
+    }
+
+    60% {
+        color: #57cff4
+    }
+
+    80% {
+        color: #0ed4c8
+    }
+
+    100% {
+        color: #fbcf61
+    }
+}
+
+/*  */
+.menu-left {
+    position: fixed;
+    width: 100px;
+    height: 530px;
+    background-color: rgb(34, 34, 34);
+}
+
 .form-match {
-    padding: 20px;
-    background-color: rgb(174, 199, 244);
-    width: 235px;
+    margin: 50px auto;
+    padding: 10px;
     border-radius: 15px;
+    background-color: rgb(87, 111, 244);
+    width: 600px;
+    text-align: center;
 }
 
 .form-match>div>input {
     border-radius: 25px;
     text-align: center;
     border: 0px;
+    height: 20px;
 }
 
 .button-add-match {
-    background-color: rgb(87, 111, 244);
+    background-color: rgb(225, 228, 249);
     border-radius: 15px;
     width: 100px;
     height: 30px;
@@ -27,6 +150,93 @@ body {
     background-color: rgb(30, 60, 226);
     color: white;
 }
+
 .form-message {
     color: rgb(224, 0, 0);
+    font-size: small;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-label {
+    font-size: medium;
+    font-weight: 500;
+}
+
+/*  */
+.icon-size {
+    font-size: 30px;
+}
+
+.bxs-dashboard {
+    color: rgb(141, 141, 141)
+}
+
+.bxs-message-square-add {
+    color: rgb(87, 111, 244)
+}
+
+.bxs-message-square-x {
+    color: rgb(195, 1, 1);
+}
+
+.bxs-exit {
+    color: rgb(227, 132, 0);
+}
+
+.menu-dashboard {
+    padding: 25px 0px 25px 0px;
+}
+.menu-dashboard:active>a>i {
+    color: black;
+}
+.menu-dashboard>span {
+    color:rgb(34, 34, 34)
+}
+
+.menu-dashboard:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+/* table */
+
+table, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 10px;
+    font-size: small;
+    font-weight: 500;
+    background-color: #c8ded3;
+    height: 100%;
+}
+.heading>td {
+    background-color: rgb(78, 194, 215);
+    
+}
+
+.button-editor-admin {
+    border: 0px;
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 2px;
+    height: 40px;
+    width: 70px;
+    font-size: small;
+    font-weight: 500;
+}
+.button-editor-admin:hover {
+    background-color: rgb(227, 209, 48);
+}
+.button-delete-admin {
+    border: 0px;
+    border-radius: 0px 10px 10px 0px;
+    height: 40px;
+    font-size: small;
+    font-weight: 500;
+}
+.button-delete-admin:hover {
+    background-color: rgb(235, 42, 42);
+}
+
+.hover-text-data>td:hover {
+    color: red;
 }

@@ -10,9 +10,9 @@
                     <img src="./Public/Images/Livepng.png" alt="">
                     <h6 class="match-name-tournament">{{match.name | uppercase}}</h6>
                 </div>
-                <a href='#!Live/{{match.id}}'>
+                <a href='#!Live/{{match.id}}/{{match.TeamOne | uppercase}}/{{match.TeamTwo | uppercase}}/{{match.name | uppercase}}'>
                     <div class="match-nameteam">
-                        <h5>{{match.TeamOne | uppercase}}<br>vs<br>{{match.TeamTwo | uppercase}}</h5>
+                        <h5>{{match.TeamOne | uppercase}}<br> vs <br>{{match.TeamTwo | uppercase}}</h5>
                         <div class="div-button-watch">
                             <span>Xem ngay</span>
                         </div>

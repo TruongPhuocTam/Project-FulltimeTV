@@ -31,22 +31,32 @@ app.config(function ($routeProvider) {
   }).when('/Other/:namepage', {
     templateUrl: './Layout/Other.html',
     controller: 'OtherCtrl'
-  }).when('/Live/:id', {
+  }).when('/Live/:id/:teamone/:teamtwo/:tournament', {
     templateUrl: './Layout/Live.html',
     controller: 'LiveCtrl'
+  }).when('/LoginAdmin/:namepage', {
+    templateUrl: './Layout/LoginAdmin.html',
+    controller: 'AdminCtrl'
   }).otherwise({
     templateUrl: './Layout/main.html'
   });
 });
 app.controller('LiveCtrl', function ($scope, $routeParams) {
   $scope.linkvideo = $scope.Listmatch[$routeParams.id].Link;
+  $scope.TeamOne = $routeParams.teamone;
+  $scope.TeamTwo = $routeParams.teamtwo;
+  $scope.Tournament = $routeParams.tournament;
 });
 app.controller('LinkCtrl', function ($scope, $routeParams) {
   $scope.namepage = $routeParams.namepage;
 });
-app.controller('OtherCtrl', function ($scope, $routeParams) {
+app.controller('AdminCtrl', function ($scope, $routeParams) {
   $scope.namepage = $routeParams.namepage;
 });
+app.controller('OtherCtrl', function ($scope, $routeParams) {
+  $scope.namepage = $routeParams.namepage;
+}); // // // // //
+
 app.filter('trusted', ['$sce', function ($sce) {
   return function (url) {
     return $sce.trustAsResourceUrl(url);

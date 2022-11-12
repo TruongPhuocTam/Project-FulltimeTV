@@ -1,0 +1,23 @@
+<title>Dashboard FulltimeTV</title>
+<table>
+    <tr class="heading">
+        <td>Mã số</td>
+        <td>Trận đấu</td>
+        <td>Giải đấu</td>
+        <td>Link</td>
+        <td>Công cụ</td>
+    </tr>
+    <tr ng-repeat="data in Listmatch" class="hover-text-data">
+        <td name="id">{{data.id}}</td>
+        <td>{{data.TeamOne}} vs {{data.TeamTwo}}</td>
+        <td>{{data.name}}</td>
+        <td><a href="{{data.Link}}" target="_blank">{{data.Link}}</a></td>
+        <td>
+            <form action="/deldata" method="post" class="d-flex">
+                <input type="number" style="display: none;" readonly value="{{data.id}}" name="id">
+                <!-- <button class="button-editor-admin">Chỉnh sửa</button> -->
+                <button class="button-delete-admin" type="submit" ng-click="mess()">Xóa</button>
+            </form>
+        </td>
+    </tr>
+</table>
