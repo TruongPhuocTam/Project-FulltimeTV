@@ -1,32 +1,38 @@
 <title>{{namepage}} - Dashboard FulltimeTV</title>
-<form action="/adddata#!/adddatamatch/Add%20Data%20Match" method="post" class="form-match" id="manage-form">
+<form action="/adddata#!/adddatamatch/Add%20Data%20Match" method="post" class="form-match"
+    name="manageform">
     <h5>Thông tin trận đấu</h5>
 
     <div class="form-group">
         <label class="form-label" for="name-tournament">Tên giải đấu:</label> <br>
-        <input id="name-tournament" type="text" name="tournament" class="form-input"
+        <input id="name-tournament" type="text" name="tournament" ng-model="tournament" required class="form-input"
             placeholder="Nhập tên trận đấu..." /><br>
-        <span class="form-message"></span>
+        <span class="form-message" ng-show="manageform.tournament.$touched && manageform.tournament.$invalid">Vui lòng
+            nhập trường này !</span>
     </div>
 
     <div class="form-group">
         <label class="form-label" for="name-team-one">Tên Team 1:</label> <br>
-        <input id="name-team-one" type="text" name="teamone" class="form-input"
+        <input id="name-team-one" type="text" name="teamone" ng-model="teamone" required class="form-input"
             placeholder="Nhập tên team 1..." /><br>
-        <span class="form-message"></span>
+        <span class="form-message" ng-show="manageform.teamone.$touched && manageform.teamone.$invalid">Vui lòng
+            nhập trường này !</span>
     </div>
 
     <div class="form-group">
         <label class="form-label" for="name-team-two">Tên Team 2:</label> <br>
-        <input id="name-team-two" type="text" name="teamtwo" class="form-input"
+        <input id="name-team-two" type="text" name="teamtwo" ng-model="teamtwo" required class="form-input"
             placeholder="Nhập tên team 2..." /><br>
-        <span class="form-message"></span>
+        <span class="form-message" ng-show="manageform.teamtwo.$touched && manageform.teamtwo.$invalid">Vui lòng
+            nhập trường này !</span>
     </div>
 
     <div class="form-group">
         <label class="form-label" for="url-link">Link phát trận đấu:</label> <br>
-        <input id="url-link" type="text" name="link" class="form-input" placeholder="Nhập link..." /><br>
-        <span class="form-message"></span>
+        <input id="url-link" type="text" name="link" ng-model="link" required class="form-input"
+            placeholder="Nhập link..." /><br>
+        <span class="form-message" ng-show="manageform.link.$touched && manageform.link.$invalid">Vui lòng
+            nhập trường này !</span>
     </div>
 
     <div class="text-center mt-3">

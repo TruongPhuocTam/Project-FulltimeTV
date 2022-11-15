@@ -11,13 +11,6 @@ app.controller('myctrl', ($scope, $http, $sce) => {
       alert('Error Loading DataMatch')
     }
   )
-
-  $scope.mess = function () {
-    const message = confirm('Bạn chắc chắn muốn xóa nó chứ ?')
-    if (message) {
-      Redirect('../admin/index.html')
-    }
-  }
   
 })
 app.config(function ($routeProvider) {

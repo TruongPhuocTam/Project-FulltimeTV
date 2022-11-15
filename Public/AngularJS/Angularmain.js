@@ -31,6 +31,17 @@ app.controller('myctrl', ($scope, $http, $sce) => {
       alert('Error Loading DataLinkWeb')
     }
   )
+
+  // function submit form          
+  $scope.submitForm = function () {
+    alert($scope.Username)
+    // Kiểm tra nếu form ok, thì xuất thông báo
+    if ($scope.Username == 'tamtruong') {
+      alert('Form Validation thành công');
+    } else {
+      alert('Error');
+    }
+  }
 })
 
 app.config(function ($routeProvider) {
@@ -42,6 +53,10 @@ app.config(function ($routeProvider) {
     .when('/Other/:namepage', {
       templateUrl: './Layout/Other.html',
       controller: 'OtherCtrl'
+    })
+    .when('/LoginAdmin/:namepage', {
+      templateUrl: './Layout/LoginAdmin.html',
+      controller: 'LoginAdminCtrl'
     })
     .when('/Live/:id/:teamone/:teamtwo/:tournament', {
       templateUrl: './Layout/Live.html',
@@ -62,6 +77,9 @@ app.controller('LinkCtrl', function ($scope, $routeParams) {
   $scope.namepage = $routeParams.namepage
 })
 app.controller('OtherCtrl', function ($scope, $routeParams) {
+  $scope.namepage = $routeParams.namepage
+})
+app.controller('LoginAdminCtrl', function ($scope, $routeParams) {
   $scope.namepage = $routeParams.namepage
 })
 

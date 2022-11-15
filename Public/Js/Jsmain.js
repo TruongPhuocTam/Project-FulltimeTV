@@ -1,6 +1,7 @@
 const $ = document.querySelector.bind(document)
 const $$ = document.querySelectorAll.bind(document)
 
+
 const formElement = $('#manage-form')
 // Xử ký Form
 const inputElements = $$('.form-input')
@@ -54,4 +55,3 @@ const restInput = () => {
   $('#Username').value = ''
   $('#Password').value = ''
 }
-

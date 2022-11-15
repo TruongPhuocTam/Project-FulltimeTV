@@ -10,7 +10,8 @@ footer {
 .section>img {
     width: 100%;
     height: auto;
-    margin-top: 85px;
+
+
 }
 /* main */
 .div-main {
@@ -191,6 +192,11 @@ iframe {
 .button-login:hover {
     background-color: rgb(0, 148, 22);
     color: white;
+}
+
+.format-header {
+    background-image: url('../Images/background_barner.png');
+    background-size: 100%;
 }
 
 
