@@ -1,7 +1,7 @@
 <title>{{namepage}} - FulltimeTV</title>
 
 <div class="div-login">
-    <form action="/Admin/index.html" name="manageform" id="manage-form" novalidate>
+    <form action="/Admin/index.html" name="manageform" id="manage-form">
         <h5>Login Admin</h5>
         <div class="form-group">
             <label class="form-label" for="Username">Username</label><br>
@@ -19,7 +19,7 @@
                 nhập trường này !</span>
         </div>
         <div class="text-center mt-3">
-            <a href="./Admin/index.html"><button type="submit" class="button-login" ng-disabled="manageform.Username.$dirty && manageform.Username.$invalid ||  manageform.Password.$dirty && manageform.Password.$invalid">Login</button></a>
+            <button type="submit" class="button-login" ng-disabled="manageform.Username.$dirty && manageform.Username.$invalid ||  manageform.Password.$dirty && manageform.Password.$invalid">Login</button>
         </div>
     </form>
 </div>
