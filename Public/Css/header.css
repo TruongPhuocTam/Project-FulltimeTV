@@ -1,6 +1,12 @@
+.format-header {
+    background-image: url('../Images/background_barner.png');
+    background-size: 100%;
+}
+
 .nav-link {
     font-weight: 900;
 }
+
 .nav {
     margin: auto;
     width: 500px;
@@ -19,22 +25,48 @@
     background-color: #ffffff;
     color: black;
 }
+
 .icon {
     color: white;
     font-size: 50px;
 }
+
 .video-div {
     padding-top: 90px;
 }
+
 /* login admin */
 .icon-login {
-    margin-left: 300px;
+    margin-left: 60%;
+    width: 130px;
 }
 
 .Icon-Login-admin {
     font-size: 40px;
     color: white;
+    float: right;
 }
+
 .Icon-Login-admin:hover {
     color: rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 25px;
+}
+
+.text-admin {
+    margin: auto;
+    transform: translateX(200%);
+    transition: all 0.2s linear;
+    color: white;
+}
+
+.icon-login:hover .text-admin {
+    transform: translateX(0%);
+}
+
+.div-text-admin {
+    width: 100px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
 }

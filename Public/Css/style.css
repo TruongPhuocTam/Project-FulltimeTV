@@ -3,9 +3,11 @@
 a {
     text-decoration: none;
 }
+
 footer {
     padding-top: 500px;
 }
+
 /* seciton images */
 .section>img {
     width: 100%;
@@ -13,15 +15,18 @@ footer {
 
 
 }
+
 /* main */
 .div-main {
     margin: auto;
 }
+
 /* Channel youtube */
 .img-channel {
     width: 25%;
     border-radius: 25px;
 }
+
 .link-youtube {
     margin: auto;
     text-align: center;
@@ -29,14 +34,17 @@ footer {
     border-radius: 15px;
     background-color: rgb(255, 170, 118);
 }
+
 .link-youtube>div {
     margin: auto;
 }
+
 .link-youtube>div>div {
     margin: auto;
     padding: 10px;
 }
-.link-youtube>div>div>a{
+
+.link-youtube>div>div>a {
     text-align: center;
     background-color: rgb(255, 21, 21);
     color: rgb(255, 255, 255);
@@ -45,7 +53,8 @@ footer {
     padding: 10px;
     border-radius: 5px;
 }
-.link-youtube>div>div>a:hover{ 
+
+.link-youtube>div>div>a:hover {
     background-color: rgb(207, 0, 0);
 }
 
@@ -56,22 +65,27 @@ footer {
     padding: 20px;
     text-align: center;
 }
+
 .link-contraband {
     padding-top: 15px;
     display: flex;
 }
+
 .link-contraband>div:hover {
     padding: 5px;
 }
+
 .link-contraband>div>a>img {
     width: 100%;
     line-height: 100%;
 }
+
 .link-contraband>div>a {
     width: 100%;
     height: 100%;
     line-height: 80px;
 }
+
 .link-contraband>div {
     margin: 15px auto;
     text-align: center;
@@ -81,6 +95,7 @@ footer {
     height: 100px;
     border-radius: 25px;
 }
+
 .div-channel-youtube {
     margin-top: 100px;
 }
@@ -100,22 +115,27 @@ footer {
     display: flex;
     height: 60px;
 }
+
 .div-header-live>img {
     border-radius: 5px;
     width: 50px;
     height: 30px;
 }
+
 .div-header-live>h6 {
     color: rgb(255, 255, 255);
     margin-left: 10px;
 }
+
 .match-name-tournament:hover {
-    color:rgb(0, 147, 210)
+    color: rgb(0, 147, 210)
 }
+
 .match-nameteam {
     text-align: center;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
+
 .match-nameteam>h5:hover {
     color: rgb(0, 179, 113);
 }
@@ -128,34 +148,43 @@ footer {
     width: 100px;
     margin: auto;
 }
+
 .div-button-watch:hover {
     background-color: rgb(226, 102, 0);
 }
+
 .event:hover .div-button-watch {
     transform: translateX(0%);
 }
+
 /*  */
 
 iframe {
     border-radius: 5px;
     margin: auto;
 }
+
 .div-video-live {
-    margin:100px auto;
+    margin: 100px auto;
     text-align: center;
 }
+
 .span-link-live {
     position: absolute;
-} 
+}
+
 .info-match {
     color: white;
 }
+
 .info-match>h5 {
     font-size: medium;
 }
+
 .info-match>h6 {
     font-size: small;
 }
+
 /* Login admin */
 .div-login {
     background-color: aliceblue;
@@ -163,25 +192,29 @@ iframe {
     width: 400px;
     border-radius: 20px;
 }
+
 #manage-form {
     padding: 20px;
     text-align: center;
 }
+
 #manage-form>h5 {
     font-size: small;
-    color:rgb(0, 148, 22);
+    color: rgb(0, 148, 22);
 }
 
 #manage-form>div>input {
     border: 1px solid rgb(44, 44, 44);
     border-radius: 10px;
 }
+
 .form-input {
     width: 250px;
     height: 40px;
     font-size: small;
     text-align: center;
 }
+
 .button-login {
     border: 0px;
     border-radius: 20px;
@@ -189,16 +222,19 @@ iframe {
     width: 150px;
     height: 30px;
 }
+
 .button-login:hover {
     background-color: rgb(0, 148, 22);
     color: white;
 }
 
-.format-header {
-    background-image: url('../Images/background_barner.png');
-    background-size: 100%;
+/* back to top */
+.back-to-top {
+    position: fixed;
+    margin-left: 96%;
+    margin-top: 350px;
 }
-
-
-
-
+.back-to-top>a>img {
+    width: 70%;
+    border-radius: 10%;
+}

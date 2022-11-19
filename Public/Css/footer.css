@@ -1,7 +1,5 @@
 body {
   display: grid;
-  /* grid-template-rows: 1fr 10rem auto; */
-  /* grid-template-areas: "main"".""footer"; */
   overflow-x: hidden;
   background: #2f2f2f;
   min-height: auto;

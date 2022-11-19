@@ -1,7 +1,6 @@
 const $ = document.querySelector.bind(document)
 const $$ = document.querySelectorAll.bind(document)
 
-
 const formElement = $('#manage-form')
 // Xử ký Form
 const inputElements = $$('.form-input')
@@ -32,12 +31,12 @@ const Login = e => {
     //
     const Username = $('#Username').value
     const Password = $('#Password').value
-
     if (Username === 'tam@gmail.com' && Password === 'tamtruong') {
       alert('Đăng nhập thành công !')
       Redirect()
       restInput()
-    } else {
+    }
+    else {
       // restInput()
       alert('Đăng nhập thất bại\nUsername hoặc password sai !!')
     }
@@ -55,3 +54,4 @@ const restInput = () => {
   $('#Username').value = ''
   $('#Password').value = ''
 }
+

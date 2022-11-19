@@ -32,16 +32,6 @@ app.controller('myctrl', ($scope, $http, $sce) => {
     }
   )
 
-  // function submit form          
-  $scope.submitForm = function () {
-    alert($scope.Username)
-    // Kiểm tra nếu form ok, thì xuất thông báo
-    if ($scope.Username == 'tamtruong') {
-      alert('Form Validation thành công');
-    } else {
-      alert('Error');
-    }
-  }
 })
 
 app.config(function ($routeProvider) {
@@ -92,3 +82,4 @@ app.filter('trusted', [
     }
   }
 ])
+

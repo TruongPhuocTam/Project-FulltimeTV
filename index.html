@@ -35,11 +35,18 @@
     <link rel="stylesheet" href="./Public/Css/admin.css">
 
     <!-- AngularJS -->
-<script src="./Public/AngularJS/Angularmain.js"></script>
+    <script src="./Public/AngularJS/Angularmain.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
 
 </head>
 
 <body ng-app="myapp" ng-controller="myctrl">
+
+    <!-- Back to top -->
+    <div class="back-to-top">
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbmGMsRpmjBbUvc8P4FBALEcJjvbc-3Xog-2ML5ZegLSEqbcLXcTGR15VF_SImDlRsR9Y&usqp=CAU" alt=""></a>
+    </div>
     
     <!-- Header -->
     <div ng-include="'./Layout/header.html'"></div>
@@ -50,5 +57,10 @@
     <!-- Footer -->
     <footer ng-include="'./Layout/footer.html'"></footer>
 
+    
+
 </body>
+
 </html>
+<script src="../Public/Js/Jsmain.js"></script>
+<script src="../Public/Js/BackToTop.js"></script>
